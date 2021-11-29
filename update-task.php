@@ -8,7 +8,6 @@
     $id = $request->id;
     $title = $request->title;
     $description = $request->description;
-    $sql = "UPDATE MyGuests ";
     $sql = "UPDATE  tasks SET title='$title', description='$description' WHERE id='$id' ";
     
     if ($db->query($sql) === TRUE) {
